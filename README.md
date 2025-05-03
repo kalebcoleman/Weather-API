@@ -57,9 +57,7 @@ This file is already in the source code but should not be committed with your ac
 
 ```
 const config = {
-
     WEATHER_API_KEY: 'YOUR_API_KEY_HERE'
-    
 };
 ```
 
