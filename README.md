@@ -1,9 +1,9 @@
-🌤️ Weather Dashboard
+## 🌤️ Weather API
 
 This project was created as part of my Web Programming I course in the Bachelor of Science in Data Science program at Northern Arizona University (NAU). 
 The Weather Dashboard is a simple web app that allows users to input a city name or ZIP code and retrieve real-time weather data using the WeatherAPI.
 
-🚀 Features
+## 🚀 Features
 
 🔍 Search weather by city or ZIP code
 
@@ -15,7 +15,7 @@ The Weather Dashboard is a simple web app that allows users to input a city name
 
 🧠 Auto-remembers last searched location via sessionStorage
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 HTML for structure
 
@@ -29,7 +29,7 @@ Weather Icons by Erik Flowers for visualizing weather conditions
 
 Session Storage to persist user location temporarily
 
-📁 Project Structure
+## 📁 Project Structure
 
 📦 project-root/
 
@@ -43,7 +43,7 @@ Session Storage to persist user location temporarily
 
 └── weather-icons-master/ # External weather icon styles (not included in repo)
 
-🔐 Setup Instructions
+## 🔐 Setup Instructions
 
 Clone the repository
 
@@ -70,8 +70,16 @@ Place the weather-icons-master folder in the project root
 Open index.html in your browser
 
 
-🧠 Lessons Learned
+## 🧠 Lessons Learned
 
 This project was a solid introduction to DOM manipulation, external APIs, and integrating third-party UI assets. 
 It helped me understand real-world development patterns and how to structure front-end code clearly and modularly.
 
+## Credit
+The icon designs are originally by [Lukas Bischoff](http://www.twitter.com/artill). Icon art for v1.1 forward, HTML, Less, and CSS are by [Erik Flowers](http://www.helloerik.com).
+
+## Licensing
+
+* Weather Icons licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
+* Code licensed under [MIT License](http://opensource.org/licenses/mit-license.html)
+* Documentation licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0)
