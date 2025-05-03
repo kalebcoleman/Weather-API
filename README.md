@@ -55,11 +55,13 @@ Create a config.js file
 
 This file is already in the source code but should not be committed with your actual API key.
 
+```
 const config = {
 
     WEATHER_API_KEY: 'YOUR_API_KEY_HERE'
     
 };
+```
 
 Download the weather icons library
 
@@ -75,11 +77,10 @@ Open index.html in your browser
 This project was a solid introduction to DOM manipulation, external APIs, and integrating third-party UI assets. 
 It helped me understand real-world development patterns and how to structure front-end code clearly and modularly.
 
-## Credit
+## 🙏 Credit
+
 The icon designs are originally by [Lukas Bischoff](http://www.twitter.com/artill). Icon art for v1.1 forward, HTML, Less, and CSS are by [Erik Flowers](http://www.helloerik.com).
 
-## Licensing
+## 📜 Licensing
 
-* Weather Icons licensed under [SIL OFL 1.1](http://scripts.sil.org/OFL)
-* Code licensed under [MIT License](http://opensource.org/licenses/mit-license.html)
-* Documentation licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0)
+This project is for educational purposes. Weather icons used under[SIL OFL 1.1 (http://scripts.sil.org/OFL)
