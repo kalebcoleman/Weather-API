@@ -3,6 +3,8 @@
 This project was created as part of my Web Programming I course in the Bachelor of Science in Data Science program at Northern Arizona University (NAU). 
 The Weather Dashboard is a simple web app that allows users to input a city name or ZIP code and retrieve real-time weather data using the WeatherAPI.
 
+Test it here: https://weatherdisplay.z5.web.core.windows.net/
+
 ## 🚀 Features
 
 🔍 Search weather by city or ZIP code
