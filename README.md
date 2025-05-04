@@ -1,9 +1,9 @@
 ## 🌤️ Weather API
 
 This project was created as part of my Web Programming I course in the Bachelor of Science in Data Science program at Northern Arizona University (NAU). 
-The Weather Dashboard is a simple web app that allows users to input a city name or ZIP code and retrieve real-time weather data using the WeatherAPI.
+The Weather Dashboard is a simple web app that allows users to input a city name or ZIP code and retrieve real-time weather data using the [WeatherAPI](https://www.weatherapi.com/).
 
-Test it here: https://weatherdisplay.z5.web.core.windows.net/
+🔗 Live Demo: https://weatherdisplay.z5.web.core.windows.net/
 
 ## 🚀 Features
 
@@ -13,7 +13,7 @@ Test it here: https://weatherdisplay.z5.web.core.windows.net/
 
 🎨 Dynamic background color based on weather condition
 
-🌤️ Weather icons integrated for enhanced UI experience
+🌈 Emoji-based weather icons for a clean, font-free UI
 
 🧠 Auto-remembers last searched location via sessionStorage
 
@@ -27,7 +27,7 @@ JavaScript for logic and API integration
 
 WeatherAPI for live weather data
 
-Weather Icons by Erik Flowers for visualizing weather conditions
+Emojis for visualizing weather conditions — no external icon libraries used
 
 Session Storage to persist user location temporarily
 
@@ -41,9 +41,8 @@ Session Storage to persist user location temporarily
 
 ├── script.js             # Main application logic
 
-├── config.js             # Stores WeatherAPI key (excluded from repo for security)
+└── config.js             # Stores WeatherAPI key (excluded from repo for security)
 
-└── weather-icons-master/ # External weather icon styles (not included in repo)
 
 ## 🔐 Setup Instructions
 
@@ -53,9 +52,7 @@ git clone https://github.com/kalebcoleman/weather-API.git
 
 cd weather-API
 
-Create a config.js file
-
-This file is already in the source code but should not be committed with your actual API key.
+Create a config.js file and use the code below
 
 ```
 const config = {
@@ -63,24 +60,31 @@ const config = {
 };
 ```
 
-Download the weather icons library
-
-Download from: https://github.com/erikflowers/weather-icons
-
-Place the weather-icons-master folder in the project root
-
 Open index.html in your browser
-
 
 ## 🧠 Lessons Learned
 
-This project was a solid introduction to DOM manipulation, external APIs, and integrating third-party UI assets. 
-It helped me understand real-world development patterns and how to structure front-end code clearly and modularly.
+This project gave me hands-on experience with:
+
+* DOM manipulation
+
+* Fetching and displaying API data
+
+* Using emojis for a clean visual interface
+
+* Styling for mobile and desktop responsiveness
+
+* Separating logic, style, and structure into clear files
 
 ## 🙏 Credit
 
-The icon designs are originally by [Lukas Bischoff](http://www.twitter.com/artill). Icon art for v1.1 forward, HTML, Less, and CSS are by [Erik Flowers](http://www.helloerik.com).
+* [WeatherAPI](https://www.weatherapi.com/) — for providing the free weather data
+
+* [Emoji icons](https://unicode.org/emoji/charts/full-emoji-list.html) — from the Unicode Standard
+
+* Original inspiration for weather icons was [Erik Flowers' Weather Icons](https://erikflowers.github.io/weather-icons/), though now replaced with emojis
 
 ## 📜 Licensing
 
-This project is for educational purposes. Weather icons used under[SIL OFL 1.1 (http://scripts.sil.org/OFL)
+This project is for educational use.
+Weather icons previously used were under the [SIL OFL 1.1] (http://scripts.sil.org/OFL), but are no longer required since switching to emojis.
