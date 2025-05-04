@@ -50,8 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
         windSpeed.textContent = `Wind Speed: ${data.current.wind_mph} mph`; 
         pressure.textContent = `Pressure: ${data.current.pressure_in} in`; 
 
-        const iconClass = getIconClass(data.current.condition.code);
-        weatherIcon.className = `wi ${iconClass}`;
+        const emoji = getIconEmoji(data.current.condition.code);
+        weatherIcon.textContent = emoji;
+        weatherIcon.className = '';     
 
         const backgroundColor = getBackgroundColor(data.current.condition.code);
         body.style.backgroundColor = backgroundColor;
@@ -70,60 +71,60 @@ document.addEventListener("DOMContentLoaded", function() {
         errorMessage.textContent = '';
     }
 
-    function getIconClass(conditionCode) {
-        const iconMapping = {
-            1000: 'wi-day-sunny',
-            1003: 'wi-day-cloudy',
-            1006: 'wi-cloudy',
-            1009: 'wi-cloudy',
-            1030: 'wi-fog',
-            1063: 'wi-day-showers',
-            1066: 'wi-day-snow',
-            1069: 'wi-day-sleet',
-            1072: 'wi-day-snow',
-            1087: 'wi-day-thunderstorm',
-            1114: 'wi-day-snow-wind',
-            1117: 'wi-day-snow-thunderstorm',
-            1135: 'wi-fog',
-            1147: 'wi-fog',
-            1150: 'wi-day-showers',
-            1153: 'wi-day-showers',
-            1168: 'wi-day-showers',
-            1171: 'wi-day-showers',
-            1180: 'wi-day-rain',
-            1183: 'wi-day-rain',
-            1186: 'wi-day-rain',
-            1189: 'wi-day-rain',
-            1192: 'wi-day-rain',
-            1195: 'wi-day-rain',
-            1198: 'wi-day-showers',
-            1201: 'wi-day-showers',
-            1204: 'wi-day-sleet',
-            1207: 'wi-day-sleet',
-            1210: 'wi-day-snow',
-            1213: 'wi-day-snow',
-            1216: 'wi-day-snow',
-            1219: 'wi-day-snow',
-            1222: 'wi-day-snow',
-            1225: 'wi-day-snow',
-            1237: 'wi-day-hail',
-            1240: 'wi-day-showers',
-            1243: 'wi-day-showers',
-            1246: 'wi-day-showers',
-            1249: 'wi-day-sleet',
-            1252: 'wi-day-sleet',
-            1255: 'wi-day-snow',
-            1258: 'wi-day-snow',
-            1261: 'wi-day-hail',
-            1264: 'wi-day-hail',
-            1273: 'wi-day-thunderstorm',
-            1276: 'wi-day-thunderstorm',
-            1279: 'wi-day-snow-thunderstorm',
-            1282: 'wi-day-snow-thunderstorm'
+    function getIconEmoji(conditionCode) {
+        const emojiMapping = {
+            1000: '☀️',   // Sunny
+            1003: '🌤️',  // Partly Cloudy
+            1006: '☁️',   // Cloudy
+            1009: '☁️',   // Overcast
+            1030: '🌫️',   // Mist
+            1063: '🌦️',   // Patchy rain
+            1066: '❄️',   // Snow
+            1069: '🌧️❄️',// Sleet
+            1072: '❄️',   // Freezing drizzle
+            1087: '⛈️',   // Thunder
+            1114: '🌬️❄️',// Blowing snow
+            1117: '❄️🌩️',// Blizzard
+            1135: '🌫️',   // Fog
+            1147: '🌫️',
+            1150: '🌧️',
+            1153: '🌧️',
+            1168: '🌧️',
+            1171: '🌧️',
+            1180: '🌧️',
+            1183: '🌧️',
+            1186: '🌧️',
+            1189: '🌧️',
+            1192: '🌧️',
+            1195: '🌧️',
+            1198: '🌧️',
+            1201: '🌧️',
+            1204: '🌨️',
+            1207: '🌨️',
+            1210: '❄️',
+            1213: '❄️',
+            1216: '❄️',
+            1219: '❄️',
+            1222: '❄️',
+            1225: '❄️',
+            1237: '🧊',   // Ice pellets
+            1240: '🌧️',
+            1243: '🌧️',
+            1246: '🌧️',
+            1249: '🌧️❄️',
+            1252: '🌧️❄️',
+            1255: '❄️',
+            1258: '❄️',
+            1261: '❄️',
+            1264: '❄️',
+            1273: '🌩️',
+            1276: '🌩️',
+            1279: '❄️⚡',
+            1282: '❄️⚡'
         };
-
-        return iconMapping[conditionCode] || 'wi-na'; // Default icon if condition code not found
+        return emojiMapping[conditionCode] || '🌈'; // fallback
     }
+    
 
     function getBackgroundColor(conditionCode) {
         const colorMapping = {

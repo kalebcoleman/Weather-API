@@ -1,19 +1,71 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 20px;
+    min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
 .container {
-    text-align: center;
-    padding: 20px;
+    width: 100%;
+    max-width: 400px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#locationInput {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    text-align: center;
+    width: 200px;
+}
+
+#locationInput:focus {
+    border-color: #999;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
+}
+
+button[type="submit"] {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: fit-content;
+}
+
+button[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;              
+    border-color: #333;           
 }
 
 #errorMessage {
@@ -27,5 +79,25 @@ body {
 
 #weatherDisplay img {
     width: 100px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    #locationInput,
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #weatherDisplay img {
+        font-size: 40px;
+    }
 }
 
