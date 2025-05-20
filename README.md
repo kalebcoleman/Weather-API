@@ -31,21 +31,6 @@ Emojis for visualizing weather conditions — no external icon libraries used
 
 Session Storage to persist user location temporarily
 
-## 📁 Project Structure
-
-📦 project-root/
-
-├── index.html           # Main HTML page
-
-├── styles.css           # Custom styling
-
-├── script.js            # Main application logic
-
-├── config.js            # Local-only file with your API key (excluded from repo)
-
-└── .gitignore           # Ensures sensitive files like config.js are not pushed
-
-
 ## 🔐 Setup Instructions
 
 Clone the repository
